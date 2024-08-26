@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Clone (Bootstrap Version)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #adadad;
+            transition: color 0.3s;
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #f5f5f7;
+        }
+        .welcome {
+            background-image: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/thai-aos-en-banner-hero-20160202?wid=1440&hei=689&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=0");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+        }
+        .product-card:hover {
+            background-color: #f8f9fa;
+        }
+        .accessories-card {
+            background-image: url('https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/smb-accessories-201908?wid=1070&hei=480&fmt=png-alpha&.v=1563990869846');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fab fa-apple"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Mac</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">iPad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Watch</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">TV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="welcome d-flex align-items-center justify-content-center">
+        <h1 class="text-white fw-light fs-1">Shop for your favorite Apple products.</h1>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-light">Mac</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 product-card">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916082" class="card-img-top" alt="MacBook Air">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">MacBook Air</h5>
+                            <p class="card-text">From ฿35,000</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat this col structure for other Mac products -->
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-light">iPhone</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 product-card">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-11-pro-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567201566801" class="card-img-top" alt="iPhone 11 Pro">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">iPhone 11 Pro</h5>
+                            <p class="card-text">From ฿35,900</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat this col structure for other iPhone products -->
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-light">Watch</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 product-card">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/apple-watch-series-5-segment-201909?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1567038391208" class="card-img-top" alt="Apple Watch Series 5">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Apple Watch Series 5</h5>
+                            <p class="card-text">From ฿13,400</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat this col structure for other Watch products -->
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-light">iPod and Apple TV</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+                <div class="col">
+                    <div class="card h-100 border-0 product-card">
+                        <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/segment-hero-ipod-touch-201509?wid=400&hei=300&fmt=png-alpha&.v=1491260462715" class="card-img-top" alt="iPod Touch">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">iPod Touch</h5>
+                            <p class="card-text">From ฿6,900</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat this col structure for other iPod and Apple TV products -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0 accessories-card">
+                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-end text-end">
+                            <h2 class="card-title fw-light">Accessories</h2>
+                            <p class="card-text">Get things done in style.</p>
+                            <a href="#" class="btn btn-link text-dark">Shop now <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light py-5">
+        <div class="container">
+            <p class="text-muted small mb-4">
+                More ways to shop: <a href="#" class="text-decoration-none">Find an Apple Store</a> or <a href="#" class="text-decoration-none">other retailer</a> near you. Or call 001‑800‑65‑6957.
+            </p>
+            <hr>
+            <div class="row py-3">
+                <div class="col-md-3">
+                    <h5 class="text-muted small">Shop and Learn</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-muted text-decoration-none">Mac</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">iPad</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">iPhone</a></li>
+                        <!-- Add more items as needed -->
+                    </ul>
+                </div>
+                <!-- Repeat this col structure for other footer sections -->
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between align-items-center small text-muted">
+                <p class="mb-0">Copyright © 2024 Apple Inc. All rights reserved.</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-muted text-decoration-none">Terms of Use</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-muted text-decoration-none">Sales and Refunds</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-muted text-decoration-none">Legal</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-muted text-decoration-none">Site Map</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
